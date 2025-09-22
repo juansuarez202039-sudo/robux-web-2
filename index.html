@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gana Robux Gratis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', cursive;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff5858, #f09819);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            background: rgba(0,0,0,0.6);
+            padding: 50px 40px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+            z-index: 1;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            animation: fadeIn 3s ease forwards;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #5865F2, #4752c4);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            animation: fadeIn 4s ease forwards;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #4752c4, #5865F2);
+        }
+
+        /* Fondo animado con partículas */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            animation: float 10s linear infinite;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) translateX(0); opacity: 1;}
+            100% { transform: translateY(-100vh) translateX(50px); opacity: 0;}
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>¿Quieres ganar Robux Gratis?</h1>
+        <p>Pulsa el botón y únete a nuestro Discord para descubrir cómo.</p>
+        <a class="btn" href="https://discord.gg/MWzyjFYdFr" target="_blank">Unirse Discord</a>
+    </div>
+
+    <!-- Partículas decorativas -->
+    <script>
+        const colors = ['#fff', '#ffd700', '#ff4500', '#00ffff'];
+        for(let i=0; i<30; i++){
+            let particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.width = particle.style.height = Math.random()*10+5+'px';
+            particle.style.left = Math.random()*100+'vw';
+            particle.style.animationDuration = (Math.random()*10+5)+'s';
+            particle.style.background = colors[Math.floor(Math.random()*colors.length)];
+            document.body.appendChild(particle);
+        }
+    </script>
+
+</body>
+</html>
